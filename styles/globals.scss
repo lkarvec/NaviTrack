@@ -1,9 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
-@import "base";
+@import "fonts";
+@import "variables/colors.scss";
 
 html,
 body {
     height: 100%;
+    background: $background;
+    color: $PrimaryColor;
     padding: 0;
     margin: 0;
     font-family: $primary-font;

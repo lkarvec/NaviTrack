@@ -1,90 +1,41 @@
-# Next + Netlify Starter
+# Tracker of Truth (SITE UNDER CONSTRUCTION)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/46648482-644c-4c80-bafb-872057e51b6b/deploy-status)](https://app.netlify.com/sites/next-dev-starter/deploys)
+[Tracker of Truth](https://lkarvec.github.io/OOTMMRTrackingSite/) is a modular tracking website built for newcomers and veterans of the Ocarina of Time and Majora's Mask randomizer communities.  It is planned to be used for both Ocarina of Time, Majora's Mask, and Combo randomizers.
 
-This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and set up to be instantly deployed to [Netlify](https://url.netlify.com/SyTBPVamO)!
+## Context
 
-This project is a very minimal starter that includes 2 sample components, a global stylesheet, a `netlify.toml` for deployment, and a `jsconfig.json` for setting up absolute imports and aliases. With Netlify, you'll have access to features like Preview Mode, server-side rendering/incremental static regeneration via Netlify Functions, and internationalized routing on deploy automatically.
+With the recent launch of [OOTMMR](https://ootmm.com/), I started getting into playing the N64 randomizers and felt as though the community-built trackers were very lackluster in design, functionality, and clarity.   In order to combat this, I'm building as close to a FULL tracker and guide as I can; not only for new players like myself, but for players that have long loved the format.  I plan on having functionality for both the Ocarina of Time and Majora's Mask randomizer's, as well as the combo randomizer from Nax.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+## Features at launch
 
-(If you click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify)
+### Custom Options
+When the user opens up the site for the first time (dependent on their LocalStorage for the site), they can select what kind of a set up they wish to have on their navigation bar.  This is where selections of what games are being played happen, what the details of their run are, if they want a suggestions tab, if they want to put in their spoiler log for help, and many more.  There will also be a reset button so they can go back to this screen.
 
-## Table of Contents:
+### Modular Design
+The site is designed with user customization in mind.  There is a snap grid the user can use by clicking the tabs on their Navigation Bar to toggle the view of a feature, like Item Tracking, for example.  They can then drag that Feature to where they want it to snap to.  There will also be a couple presets for players who don't really want to set this up every time they open the site.  I'm planning for 2-3 normal presets, and one custom preset.
 
-- [Getting Started](#getting-started)
-- [Installation options](#installation-options)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
-  - [Removing Cypress](#removing-cypress)
+### Basic Tracking
+Currently, I have plans for normal item, key, mask, trading, songs, and other basic entities to be tracked.  Additionally, there will be settings to include heart pieces, junk, stray faeries, and more in the future.
 
-## Getting Started
+### Notes
+There will be a text area module for the user to type things in.  This will be saved in local storage for the site.
 
-First, run the development server:
+### Check Tracking
+There is a LOT to collect in these games, and there aren't really any easy ways to track it all.  This section is sorted by location names and will include all checks that can possibly drop an item with a picture of what that check looks like if you hover over it.  Potsanity will definitely have to wait for this one.  This will have integration with the Suggestions tab.  Grottos will be sorted with their original location.  Example : 'Hyrule Field Castle Grotto'
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Suggestions
+Randomizers are easy to forget things in.  This tab will help you clear things up by looking for chests, skulltulas, faeries, and more; and generate a list of a couple things you still have to do with a picture of the action.  This can include certain glitches or skips, which may normally set you outside of logic of your seed, but you can also turn off the Glitch/Skip flag with a checkbox at the top.  Any Glitch or Skip suggested will link to a modal pop-up that shows a tutorial of what you need to do.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Glitch/Skip Tutorials
+Ocarina of Time and Majora's Mask have a wide variety of glitches and skips that are not necessarily well documented out there.  A tab will be included as a searchable encyclopedia of glitches and skips, full of tutorials and videos on how to do them all.  This will be periodically updated and credit will always be given to those who contribute to this.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Spoiler Log Parse
+This section will basically be a simple dropdown to search for an item in your spoiler log, and then tell you where it is, along with an image if you hover over it.
 
-### Installation options
+## Roadmap
 
-**Option one:** One-click deploy
+The Options and Modular Design come first in the beta, then I will add the basic tracking and notes sections.  Check Tracking will come next, and should include the base for Suggestion integration.  Glitchless suggestions will then be added, with Glitches being added much later.  I'm not sure of where I want to add the Spoiler Log Parsing in at, but I believe it may be somewhere between suggestions and glitches to break up that monotony.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+Aside this?  I'm not sure Potsanity is on the menu, but I am definitely interested in having Shop and Scrub sanity on, as well as some explanation for all of the warps like wrong warps you can potentially do.  I also will need to add a dungeon entrance and Boss check tracker as well.
 
-**Option two:** Manual clone
-
-1. Clone this repo: `git clone https://github.com/netlify-templates/next-netlify-starter.git`
-2. Navigate to the directory and run `npm install`
-3. Run `npm run dev`
-4. Make your changes
-5. Connect to [Netlify](https://url.netlify.com/Bk4UicocL) manually (the `netlify.toml` file is the one you'll need to make sure stays intact to make sure the export is done and pointed to the right stuff)
-
-## Testing
-
-### Included Default Testing
-
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
-
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
-- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
-
-If your team is not interested in this tooling, you can remove them with ease!
-
-### Removing Renovate
-
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
-
-### Removing Cypress
-
-For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testing. This makes sure that we can validate that our templates are rendering and displaying as we’d expect. By default, we have Cypress not generate deploy links if our tests don’t pass. If you’d like to keep Cypress and still generate the deploy links, go into your `netlify.toml` and delete the plugin configuration lines:
-
-```diff
-[[plugins]]
-  package = "netlify-plugin-cypress"
--  [plugins.inputs.postBuild]
--    enable = true
--
--  [plugins.inputs]
--    enable = false 
-```
-
-If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
-
-```bash
-npm uninstall -D netlify-plugin-cypress
-```
-
-And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
-
-```bash
-npm uninstall -S cypress
-```
+At some point, this is getting wrapped as a standalone electron app.
