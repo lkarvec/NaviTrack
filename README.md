@@ -1,4 +1,5 @@
 # Tracker of Truth (SITE UNDER CONSTRUCTION)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O5WSDQK)
 
 [Tracker of Truth](https://lkarvec.github.io/OOTMMRTrackingSite/) is a modular tracking website built for newcomers and veterans of the Ocarina of Time and Majora's Mask randomizer communities.  It is planned to be used for both Ocarina of Time, Majora's Mask, and Combo randomizers.
 
