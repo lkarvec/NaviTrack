@@ -25,6 +25,7 @@
         "@react-spring/web": "^9.7.1",
         "@reduxjs/toolkit": "^1.9.5",
         "@tanstack/react-table": "^8.9.2",
+        "@types/react": "^18.3.2",
         "axios": "^1.6.7",
         "babel-jest": "^29.7.0",
         "badwords-list": "^1.0.0",
