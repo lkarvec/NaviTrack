@@ -1,3 +1,6 @@
+#NaviTrack
+NaviTrack is a one-stop shop for me to have an online collection of Raid Plans in games like WoW and FF14; as well as trackers for the randomizers that I work on.  This site is still in a very alpha state.
+
 # Tracker of Truth (SITE UNDER CONSTRUCTION)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O5WSDQK)
 
